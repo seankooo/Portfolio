@@ -522,6 +522,22 @@ textarea {
     color: grey;
     margin-bottom: 2rem; }
 
+.project-details__documents {
+  margin: 0 0 7rem 0; }
+  .project-details__documents-para {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: grey;
+    margin-bottom: 2rem; }
+  .project-details__documents-hidden {
+    display: none;
+  }
+  .project-details__documents-fullWidth{
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+
 .project-details__tools-used {
   margin: 0 0 7rem 0; }
   .project-details__tools-used-list {
