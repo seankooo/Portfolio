@@ -152,7 +152,7 @@ textarea {
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s; }
   .btn:hover {
-    transform: translateY(-3px); }
+    transform: translateY(-6px); }
   .btn--bg {
     padding: 1.5rem 8rem;
     font-size: 2rem; }
@@ -440,23 +440,23 @@ textarea {
   background-position: center;
   position: relative; }
 
-  .project-cs-hero#project1{
+  .project-cs-hero#projectAPS{
     color: #fff;
     background-image: url("../assets/project-aps1.jpg");
     background-size: cover;
     background-position: center;
     position: relative; }
 
-    .project-cs-hero#project2{
+    .project-cs-hero#projectIMU{
       color: #fff;
-      background-image: url("../assets/project-aps1.jpg");
+      background-image: url("../assets/project-wic.png");
       background-size: cover;
       background-position: center;
       position: relative; }
 
-      .project-cs-hero#project3{
+      .project-cs-hero#projectST{
         color: #fff;
-        background-image: url("../assets/project-aps1.jpg");
+        background-image: url("../assets/project-stellar.png");
         background-size: cover;
         background-position: center;
         position: relative; }
