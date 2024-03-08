@@ -22,7 +22,7 @@
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
             <img
-              src="./assets/png/sean-koo-icon.png"
+              src="./assets/sean5.jpg"
               alt="Ram Maheshwari Logo Image"
               class="header__logo-img"
             />
@@ -91,7 +91,7 @@
           </p>
         </div>
         <div class="project-cs-hero__cta">
-          <a href="https://github.com/nmecham27/WIC.git" class="btn btn--bg" target="_blank">Github Link</a>
+          <a href="https://github.com/irbk1109/APS-SeniorProject.git" class="btn btn--bg" target="_blank">Github Link</a>
         </div>
       </div>
     </section>
@@ -118,10 +118,14 @@
                The contents here will be updated according to the progress of this project. 
                Currently, we are working on project proposal and the circuit for car detection in each parking spot, using ifrared sensors. 
               </p>
+
+              <div style="display:grid; place-items: center;"><a href="https://github.com/irbk1109/APS-SeniorProject.git" class="btn btn--bg" target="_blank">Github Link</a>
+              </div>
+              
             </div>
             <div class="project-details__tools-used">
-              <h3 class="project-details__content-title">Tools & Skills that will be used in this project</h3>
-              <div class="skills">
+              <h3 class="project-details__content-title">Tools & Skills that will be used</h3>
+              <div class="skills__project">
                 <div class="skills__skill">Python</div>
                 <div class="skills__skill">Circuit Design</div>
                 <div class="skills__skill">Rasberry Pi</div>
@@ -151,6 +155,27 @@
                 >Code Link</a
               >
             </div> -->
+            <div class="project-details__documents">
+              <h3 class="project-details__content-title">Project Documents</h3>
+            
+              <button class="btn btn--med btn--theme project-details__documents-btn" id="pdfButton" onclick="togglePDF('assets/APS-proposal.pdf', 'pdfContainerAPSProposal', 'pdfEmbedAPSProposal')">Proposal.pdf</button>
+              <div id="pdfContainerAPSProposal" class="project-details__documents-hidden" style="height: 0;">
+                <embed id="pdfEmbedAPSProposal" src="" type="application/pdf" width="100%" height="100%">
+              </div>
+
+              <!-- <button class="btn btn--med btn--theme project-details__documents-btn" id="pdfButton" onclick="togglePDF('assets/WIC-paper.pdf', 'pdfContainer2', 'pdfEmbed2')">Paper.pdf</button>
+              <div id="pdfContainer2" class="project-details__documents-hidden" style="height: 0;">
+                <embed id="pdfEmbed2" src="" type="application/pdf" width="100%" height="100%">
+              </div> -->
+
+              <!-- <button class="btn btn--med btn--theme project-details__documents-btn" id="pdfButton" onclick="togglePDF('assetWIC-presentation.pdf', 'pdfContainer3', 'pdfEmbed3')">Proposal.pdf</button>
+              <div id="pdfContainer3" class="project-details__documents-hidden" style="height: 0;">
+                <embed id="pdfEmbed3" src="" type="application/pdf" width="100%" height="100%">
+              </div> -->
+
+
+          
+            </div>
           </div>
         </div>
       </div>
@@ -163,60 +188,62 @@
               <span>Social</span>
             </h2>
             <div class="main-footer__social-cont">
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/younghyun-koo/">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/linkedin-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <a target="_blank" rel="noreferrer" href="https://github.com/seankooo">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/github-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <!-- <a target="_blank" rel="noreferrer" href="#">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/twitter-ico.png"
                   alt="icon"
                 />
-              </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              </a> -->
+              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/channel/UCAhcDdfoxO0sy43dI8XEUCA">
                 <img
                   class="main-footer__icon"
                   src="./assets/png/yt-ico.png"
                   alt="icon"
                 />
               </a>
-              <a target="_blank" rel="noreferrer" href="#">
+              <!-- <a target="_blank" rel="noreferrer" href="#">
                 <img
                   class="main-footer__icon main-footer__icon--mr-none"
                   src="./assets/png/insta-ico.png"
                   alt="icon"
                 />
-              </a>
+              </a> -->
             </div>
           </div>
           <div class="main-footer__row main-footer__row-2">
             <h4 class="heading heading-sm text-lt">Sean Koo</h4>
             <p class="main-footer__short-desc">
               Computer engineering student at University of Utah, 2021-2024
+
             </p>
           </div>
         </div>
 
+        
         <div class="main-footer__lower">
           &copy; Copyright 2021. Made by
           <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
             >Ram Maheshwari</a
-          >
-          <br> edited by Sean Koo
+          >, editted by Sean Koo
         </div>
       </div>
     </footer>
+
     <script src="./index.js"></script>
   </body>
 </html>

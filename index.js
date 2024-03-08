@@ -45,17 +45,20 @@ function togglePDF(pdfFilePath, pdfContainer, pdfEmbed) {
   if (pdfContainer.classList.contains("project-details__documents-hidden")) {
       // Show PDF container
       pdfContainer.classList.remove("project-details__documents-hidden");
-      pdfContainer.classList.add("project-details__documents-fullWidth");
-      pdfContainer.style.height = '600px'; // Set height to accommodate PDF
-      pdfContainer.classList.add("project-details__documents-fullWidth");
+      pdfContainer.classList.add("project-details__documents-fullWidth"); 
+      pdfEmbed.style.transition = 'all 1s';
+      pdfContainer.style.height = '70vh'; // Set height to accommodate PDF
+    
       pdfEmbed.setAttribute("src", pdfFilePath);
 
   } else {
-      // Hide PDF container
+      // Hide PDF container 
+      pdfEmbed.style.transition = 'all 1s';
       pdfContainer.classList.remove("project-details__documents-fullWidth");
       pdfContainer.classList.add("project-details__documents-hidden");
       pdfContainer.style.height = "0"; // Set height to 0 to hide PDF
       pdfEmbed.setAttribute("src", ""); // Clear the PDF source
+      
   }
 }
 
