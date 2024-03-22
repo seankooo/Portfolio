@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Tester</title>
+    <link rel="stylesheet" href = "css/typeStyle.css">
+ 
+
+</head>
+<body>
+    <div class="main">
+        <div class="fileUploadDiv">
+            <input type="file" id="fileInput" accept=".txt">
+            <button onclick="parseFile1()">파일 파싱</button>    
+        </div>
+        <div class="scriptDiv" id="scriptDiv1" >
+            <span class="scriptSpan" id="script1">123456 Typing test by Sean Koo</span> 
+        </div> 
+        <div class="spanDiv">
+            
+            <span class="inputSpan" id="input"><br></span>
+        
+        </div>
+        <div class="inputDiv">
+            <input class="inputcan" type="text" id="inputText">
+        </div>
+         <div class="speedDiv" id="speedDiv1">Speed= 
+            <span id="speedSpan">speedspan</span> 
+        </div>
+         <div class="accuDiv" id="accuDiv1">accuracy= 
+            <span id="accSpan">accuracy</span> 
+        </div>
+        <div><button id="prev">prev</button>
+            <button id="next">next</button>
+        </div>
+        
+         
+         <!-- <div class="textFileDiv">
+            <input class="textFileInput">
+        </div> -->
+    </div>
+
+
+
+    <script src="typeScript.js"></script>
+</body>
+</html>

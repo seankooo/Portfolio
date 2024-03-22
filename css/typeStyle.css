@@ -1,0 +1,71 @@
+.main{
+    width: auto;
+    align-items: center;
+    text-align: center;
+    margin: 5rem;
+    border:2px black;
+
+}
+
+.scriptDiv{
+    text-align: left;
+    margin: 1rem;
+    width: 100%;
+    border:2px black;
+    background-color: lightblue;
+    font-size: 15px;
+    font: default;
+
+}
+.spanDiv{
+    text-align: left;
+    margin: 1rem;
+    width: 100%;
+    border:2px black;
+    background-color: lightcyan;
+    font-size: 15px;
+    font: default;
+
+
+}
+.inputDiv{
+    width:100%;
+    margin: 1rem;
+    border:2px black;
+    background-color: lightyellow;
+    font: default;
+
+}
+.inputcan {
+    width: 100%;
+   font-size: 15px;
+  color: #222222;
+  border: none;
+  border-bottom: solid #aaaaaa 1px;
+  
+  position: relative;
+  background: none;
+
+}
+
+.text{
+    width:100%;
+
+}
+
+.textRed{
+    color: red;
+
+}
+.textBlue{
+    color: blue;
+}
+
+.inputcan{
+    width:100%;
+ 
+    color: green;
+}
+.correct{
+    color : blue;
+}
