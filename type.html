@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Type Tester</title>
-    <link rel="stylesheet" href = "css/typeStyle.css">
- 
+    <link rel="stylesheet" href="./css/typeStyle.css">
 
 </head>
+
 <body>
     <div class="main">
         <div class="fileUploadDiv">
-            <input type="file" id="fileInput" accept=".txt">
-            <button onclick="parseFile1()">파일 파싱</button>    
-        </div>
-        <div class="scriptDiv" id="scriptDiv1" >
-            <span class="scriptSpan" id="script1">123456 Typing test by Sean Koo</span> 
-        </div> 
-        <div class="spanDiv">
+            <input class="fileUploadInput" type="file" id="fileInput" accept=".txt">
+            <div class="uploadButtonDiv">
+                <button class="uploadButton" onclick="parseFile1()">Click to process the file</button>
+            </div>
+            <div class="helpButtonDiv">
+                <button class="helpButton" id="helpButton1">Help</button>
+            </div>
             
-            <span class="inputSpan" id="input"><br></span>
-        
         </div>
+        <div class="toggleDiv">
+        <div class="helpDiv" id="helpDiv1">
+            <h1>How to customize typing script</h1>
+            <p class="explanation"><b>1.</b> You create a '.txt' file of your desired script using Notepad app. </p>
+            <p>Make sure the file format you created is in '.txt' format.</p>
+            <p class="explanation"><b>2.</b> Upload the file using the very left button</p>
+            <p class="explanation"><b>3.</b> After uploading the file, click the process file button</p>
+            <p class="explanation"><b>4.</b> You can practice the script sentences by sentences and move to different sentences using Prev or Next buttons.</p>
+            
+        </div>
+        </div>
+
+        <div class="statusDiv">
+            <div class="buttonDiv">
+                <button class="buttons" id="prev">&lt prev</button>
+            </div>
+            <div class="speedDiv" id="speedDiv1">
+                <span class="statusSpan">Speed</span>
+                <span id="speedSpan">0</span>
+            </div>
+            <div class="accuDiv" id="accuDiv1">
+                <span class="statusSpan">Accuracy</span>
+                <span id="accSpan">0</span>
+            </div>
+            <div class="buttonDiv">
+            <button class="buttons" id="next">next &gt</button>
+            </div>
+        </div>
+        
+
+        <div class="scriptDiv" id="scriptDiv1">
+            <span class="scriptSpan" id="script1">123456 Typing test by Sean Koo</span>
+        </div>
+        <!-- <div class="spanDiv">
+            
+            <span class="inputSpan" id="input" rows="4" column="30"><br></span>
+        
+        </div> -->
         <div class="inputDiv">
-            <input class="inputcan" type="text" id="inputText">
+            <textarea class="inputTextArea" type="text" id="inputText">*Click here to start typing.</textarea>
         </div>
-         <div class="speedDiv" id="speedDiv1">Speed= 
-            <span id="speedSpan">speedspan</span> 
-        </div>
-         <div class="accuDiv" id="accuDiv1">accuracy= 
-            <span id="accSpan">accuracy</span> 
-        </div>
-        <div><button id="prev">prev</button>
-            <button id="next">next</button>
-        </div>
-        
-         
-         <!-- <div class="textFileDiv">
+
+
+
+        <!-- <div class="textFileDiv">
             <input class="textFileInput">
         </div> -->
     </div>
@@ -45,4 +74,5 @@
 
     <script src="typeScript.js"></script>
 </body>
+
 </html>

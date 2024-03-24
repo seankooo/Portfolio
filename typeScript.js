@@ -3,23 +3,40 @@
 //const scriptDiv = document.getElementById("script1");
 const scriptSpan= document.getElementById("script1");
 const inputText = document.getElementById("inputText");
-const inputSpan = document.getElementById("input");
+const inputDiv =document.getElementById("inputDiv");
 const speedSpan = document.getElementById("speedSpan");
 const accSpan = document.getElementById("accSpan");
 const fileInput = document.getElementById('fileInput');
+const helpDiv = document.getElementById('helpDiv1');
 
-// let inputSize = scriptDiv.textContent.length;
-// console.log(inputSize);
+
+
 
 let time=0;
 let countCorrect=0;
+let init = 1;
 var startTime;
 var endTime;
-let inputLength;
+let inputLength=0;
 let text ;
 let index = 0;
-var textArray= new Array();
+let canClick = 1; 
+let toggleHelp = false;
+
+var textArray= ["Choose your love; love your choice.", 
+                "God cares a lot more about who we are and about who we are becoming, than about who we once were." , 
+                "Sometimes in life we become so focused on the finish line that we fail to find joy in the journey.",
+                "There is only one happiness in this life, to love and be loved.",
+                "Happiness consists not of having, but of being - not of possessing, but of enjoying."];
+
 //let script = scriptSpan.textContent;
+ scriptSpan.textContent = textArray[0];
+
+function textAreaResize(){
+    
+    inputText.style.height = "3rem";
+    inputText.style.height = inputText.scrollHeight + 'px';
+}
 
 
 function parseFile1() {
@@ -36,7 +53,7 @@ function parseFile1() {
       const content = event.target.result;
       
       parseText(content);
-      displayParsedContent(content);
+    
       scriptSpan.textContent = textArray[0];
     };
   
@@ -45,29 +62,32 @@ function parseFile1() {
 
   
   function parseText(script) {
+    textArray = new Array();
+    index=0;
+    var tempString;
     var start= 0;
     for(var i = 0; i <script.length; i++){
-        if(script[i]=="." ){
-            textArray.push(script.substring(start, i+1));
+        if(script[i]=='.' | script[i] =='!' | script[i] =='?' ){
+               
+            tempString = script.substring(start, i+1);
+            tempString = tempString.replace(/^\s+/, "");         //왼쪽 공백제거
+            tempString = tempString.replace(/\s+$/g, "");       //오른쪽 공백제거
+            tempString = tempString.replace(/\n/g, "");         //행바꿈제거
+            tempString = tempString.replace(/\r/g, "");         //엔터제거
+            textArray.push(tempString);
             start = i+1;
+            
+            
         }
     }
   }
-
-  function displayParsedContent(parsedContent) {
-    
-    console.log(parsedContent);
-  }
-
-
-
 
 
 
 function initInterval(){
     inputLength = inputText.value.length;
     if(inputLength != 0){
-       // console.log()
+     
         setInterval(()=>{
             typingTime();
             speed();
@@ -79,112 +99,157 @@ function initInterval(){
 
 
 
-// inputText.addEventListener("keydown", ()=>{
-    
-
-
-//     inputText.removeEventListener("keydown");
-// });
-//parseButton.addEventListener('click', parseFile());
-
-inputText.addEventListener("input", ()=> {
-    //renderInputText();
-    text = inputText.value;
-    inputLength = inputText.value.length;
-    checkCorrectness();
-    typingTime();
-    initInterval();
-});
-next.addEventListener('click', ()=>{
-   
-    scriptSpan.textContent = textArray[index];
-    console.log("index= " + index); 
-    index++;
-});
-
-prev.addEventListener('click',()=>{
- 
-    scriptSpan.textContent = textArray[index];
-    console.log("index= " + index);
-    index--;
-
-});
-
-
-
 function typingTime(){
     
-    console.log("inputlength= "+inputLength);
-    var init = 0;
 
-    if (inputLength == 1){
-        
-        
+
+    if(inputLength == 0){
+        init = 1; 
+    }
+
+   else if (init ==1 & inputLength == 1){
+        init = 0;
         startTime= new Date();
-        console.log("startTime= " +startTime);
-        console.log("endTime= " + endTime); 
+    
     }
     else{
         endTime = new Date(); 
-        console.log("startTime= " +startTime);
-        console.log("endTime= " + endTime); 
+     
       
         var timems = endTime - startTime;
         time= timems/1000;
         var timeM = time/60000;
       
-        // console.log("밀리초= " + timems);
-        // console.log("초= " + time);
-        // console.log("분= " + timeM);
-       
+
     }
 }
    
 
  function speed(){
-    //var length= inputText.Value.length
-
-    // console.log("초= " + time);
-    // console.log("speed= "+ countCorrect*60/time);
+    
     var speed1 = Math.round(countCorrect*60/time); 
-    var accuracy = countCorrect/inputLength;
+    var accuracy;
+    if (inputLength == 0){
+        accuracy = "";
+    }
+    else{
+        accuracy =  Math.round(countCorrect/inputLength);
+
+    }
     speedSpan.textContent = speed1;
     accSpan.textContent = accuracy*100 + "%";
     
  }
 
 function checkCorrectness(){
-    var text = inputText.value;
-    var length= text.length;
-    console.log("text길이 " + length);
-    var script = scriptSpan.textContent;
-    inputSpan.textContent = text;
-    var changeColor=1;
-    countCorrect = 0;
-    for(var i = 0;i<length; i++){
-    
-        if (script[i] == text[i]){
-            countCorrect++;
-           
-        }
-        else if(script[i] != text[i]){
-            inputSpan.classList.remove("textBlue");
-            inputSpan.classList.add("textRed");
-            inputText.style.color = "red";
-            changeColor = 0;  
-        }
-    }
    
-    if(changeColor){
-        inputText.style.color = "green";
-        inputSpan.classList.remove("textRed")
-        inputSpan.classList.add("textBlue")
-    } 
-    if(length == script.length){
+    var script = textArray[index];
+    var scriptLength = script.length;
 
+ 
+    countCorrect = 0;
+    let styledText = '';
+    for(var i = 0; i<scriptLength; i++){
+         if (i < inputLength){
+            if (script[i] == text[i]){
+                countCorrect++;
+                styledText += '<span class="textBlue">' + script[i] + '</span>';
+            }
+            else if(script[i] != text[i]){
+                styledText += '<span class="textRed">' + script[i] + '</span>';
+               
+            }
+         }
+         else {
+            styledText += script[i];
+         }
     }
-    speed();
+    scriptSpan.innerHTML = styledText;
+
+    if(inputLength == (scriptLength +1)){
+        document.getElementById('next').click();
+        inputText.value = '';
+    }
+
 
 
 }
 
+
+
+//====================== Events ==========================
+
+
+inputText.addEventListener("click",()=>{
+    if(canClick) {
+        inputText.value = "";
+        canClick = 0;
+    }
+});
+
+
+
+
+inputText.addEventListener("input", ()=> {
+     typingTime();
+
+    //renderInputText();
+    text = inputText.value;
+    inputLength = inputText.value.length;
+
+    // let styledText = '';
+    // for (let i = 0; i < text.length; i++) {
+    //   if (i % 2 === 0) {
+    //     styledText += '<span class="textRed">' + text[i] + '</span>';
+    //   } else {
+    //     styledText += text[i];
+    //   }
+    // }
+    // inputSpan.innerHTML = styledText;
+    // //inputText.value = styledText;
+
+    checkCorrectness();
+   
+    initInterval();
+    textAreaResize();
+    //inputSpan.
+
+});
+helpButton1.addEventListener('click', ()=>{
+    toggleHelp = !toggleHelp;
+    if(toggleHelp){
+        helpDiv.style.display = "block";
+        helpButton1.textContent = "Close help"
+    }
+    else{
+        helpDiv.style.display = "none";
+        helpButton1.textContent = "Help"
+    }
+
+});
+
+next.addEventListener('click', ()=>{
+   if(index == textArray.length-1 ){
+        index = 0;
+   }
+   else{
+    index ++;
+   }
+    scriptSpan.textContent = textArray[index];
+    inputText.value = "";
+
+
+});
+
+prev.addEventListener('click',()=>{
+    if(index == 0 ){
+        index = (textArray.length - 1) ;
+   }
+   else{
+        index--;       
+   }
+    inputText.value = "";
+    scriptSpan.textContent = textArray[index];
+  
+
+});

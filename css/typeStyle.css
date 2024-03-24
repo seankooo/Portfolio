@@ -2,49 +2,157 @@
     width: auto;
     align-items: center;
     text-align: center;
+    align-content: center;
     margin: 5rem;
-    border:2px black;
+   
 
+}
+
+.fileUploadDiv{
+    margin:auto;
+    width: 75%;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    
+}
+.fileUploadInput{
+    flex:1.5;
+    font-size: 2rem;
+    background-color: white;
+}
+
+.uploadButton{
+    width:20rem;
+    height:3rem;
+    font-size: 1.7rem;
+    background-color: white;
+}
+.uploadButtonDiv{
+    flex:1;
+
+}
+.helpButtonDiv{
+    text-align:right;
+    align-items: right;
+    flex:0.7;
+}
+.helpButton{
+    height:3rem;
+    width: 10rem;
+    font-size: 1.7rem;
+    background-color: white;
+}
+
+.helpDiv{
+    margin:auto;
+    /* position:absolute; */
+    display:none;
+    width: 60%;
+    padding-left: 3rem;
+    padding-right:3rem;
+    transition: all 1s ease;
+    overflow: hidden;
+
+}
+
+.helpDiv p{
+    font-size: 2rem;
+}
+
+.helpDiv h1{
+    font-size:2.8rem;
+}
+.statusDiv{
+    width:70%;
+    font-size: 3rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding-right:3rem;
+    padding-left: 3rem;
+    margin-top:1rem;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+
+}
+.speedDiv{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accuDiv{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttonDiv{
+    flex:0.1;
+}
+
+.buttons{
+    height:5rem;
+    width:10rem;
+    font-size: 3rem;
+    background-color: skyblue;
+    color : white;
+    border: none;
 }
 
 .scriptDiv{
     text-align: left;
-    margin: 1rem;
-    width: 100%;
-    border:2px black;
-    background-color: lightblue;
-    font-size: 15px;
-    font: default;
+    margin:auto;
+    width: 70%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 3rem;
+}
 
+
+.scriptSpan{
+    font-size: 3rem;
+    font-family: Arial;
+    /* margin-left: 2px; */
+    height: 2 rem;
+    
 }
 .spanDiv{
     text-align: left;
-    margin: 1rem;
-    width: 100%;
+    margin: auto;
+    width: 50%;
     border:2px black;
     background-color: lightcyan;
     font-size: 15px;
     font: default;
-
-
 }
-.inputDiv{
-    width:100%;
-    margin: 1rem;
-    border:2px black;
-    background-color: lightyellow;
-    font: default;
-
+.inputDiv textarea{
+    text-align: left;
+    margin:auto;
+    width: 70%;
+    border: 2px solid black;
+    padding: 3rem;
+    height: 5rem;
 }
-.inputcan {
+
+.inputTextArea {
     width: 100%;
-   font-size: 15px;
+   font-size: 3rem;
   color: #222222;
   border: none;
   border-bottom: solid #aaaaaa 1px;
-  
+  height: 3rem;
   position: relative;
   background: none;
+  font-family : Arial;
+  overflow-y: hidden;
+  resize:none;
 
 }
 
@@ -56,16 +164,9 @@
 .textRed{
     color: red;
 
+
 }
 .textBlue{
     color: blue;
 }
 
-.inputcan{
-    width:100%;
- 
-    color: green;
-}
-.correct{
-    color : blue;
-}
