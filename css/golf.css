@@ -1,0 +1,72 @@
+.main{
+    text-align: center;
+}
+
+.county{
+
+}
+
+
+.golfCourse{
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    background-color:aliceblue;
+    outline:auto;
+}
+.courseName{
+    color: blue;
+}
+
+.websiteLink{
+    font-size: x-large;
+    margin: 10px;
+    color:blueviolet;
+}
+
+.bookLink{
+    font-size: x-large;
+    margin: 10px;
+    color:magenta;
+}
+
+.sortButton{
+
+}
+
+.mapIframe{
+    display: block;
+    width: 600px ;
+    height: 450px; 
+    border: 0; 
+   
+}
+
+.holes{
+    font-size:x-large;
+
+}
+
+.reviewStars{
+    font-size: x-large;
+}
+
+.priceDiv{
+}
+
+.nineHolePrice{
+    font-size:x-large;
+    display: inline;
+    margin-right: 5px;
+}
+
+.eighteenHolePrice{
+    display: inline;
+    font-size:x-large;
+
+}
+
+.cartPrice{
+
+}
+

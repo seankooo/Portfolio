@@ -1,0 +1,137 @@
+{
+  "Sheet1": [
+    {
+      "name": "Bonneville",
+      "holes": "18",
+      "nineHolePrice": "22",
+      "eighteenHolePrice": "44",
+      "cartPrice": "10",
+      "stars": "4.3",
+      "website": "https://slc-golf.com/bonneville/",
+      "bookSite": "https://www.chronogolf.com/club/bonneville-golf-course",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d76804.87695928912!2d-111.90103830053833!3d40.717953292165284!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87526077910250ab%3A0xfac6fabfdc3623c3!2sBonneville%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518808586!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Forest Dale",
+      "holes": "9",
+      "nineHolePrice": "18",
+      "eighteenHolePrice": "n/a",
+      "cartPrice": "10",
+      "stars": "4.4",
+      "website": "https://slc-golf.com/forestdale/",
+      "bookSite": "https://www.chronogolf.com/club/forest-dale-golf-course",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d136875.73991977092!2d-111.92474334933272!3d40.70579320657771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528a9ecb7dc291%3A0x1fe8d446afcf1eea!2sForest%20Dale%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518847122!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Glendale",
+      "holes": "18",
+      "nineHolePrice": "19",
+      "eighteenHolePrice": "38",
+      "cartPrice": "10",
+      "stars": "4.3",
+      "website": "https://slc-golf.com/glendale/",
+      "bookSite": "https://www.chronogolf.com/club/glendale-golf-course",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d108668.7469929458!2d-111.98141068637284!3d40.68715426596936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f4b5c786e1e3%3A0xa523daed3e3e157!2sGlendale%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518880501!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Mountain Dell",
+      "holes": "18",
+      "nineHolePrice": "25",
+      "eighteenHolePrice": "44",
+      "cartPrice": "10",
+      "stars": "4.5",
+      "website": "https://slc-golf.com/mountaindell/",
+      "bookSite": "https://www.chronogolf.com/club/mountain-dell-golf-club",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43102.40759521662!2d-111.74220798330232!3d40.72240204833827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875267bd06af1a55%3A0x49191dcaee7dc17!2sMountain%20Dell%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518965885!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Nibley Park",
+      "holes": "9",
+      "nineHolePrice": "17",
+      "eighteenHolePrice": "n/a",
+      "cartPrice": "10",
+      "stars": "3.9",
+      "website": "https://slc-golf.com/nibleypark/",
+      "bookSite": "https://www.chronogolf.com/club/nibley-park-golf-course",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d136875.73991977092!2d-111.92474334933272!3d40.70579320657771!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528a91835c8f1d%3A0xbe4806c00b27051f!2sNibley%20Park%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518863587!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Rose Park",
+      "holes": "18",
+      "nineHolePrice": "17",
+      "eighteenHolePrice": "34",
+      "cartPrice": "10",
+      "stars": "3.5",
+      "website": "https://slc-golf.com/rosepark/",
+      "bookSite": "https://www.chronogolf.com/club/rose-park-golf-course",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d108668.7469929458!2d-111.98141068637284!3d40.68715426596936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f6a711e44e0b%3A0xc0b1c3a1119d7ce9!2sRose%20Park%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518889762!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Meadow Brook",
+      "holes": "18",
+      "nineHolePrice": "17",
+      "eighteenHolePrice": "34",
+      "cartPrice": "10",
+      "stars": "4.4",
+      "website": "https://slco.org/parks-recreation/facilities-and-golf/golf/meadow-brook-golf-course/",
+      "bookSite": "https://www.chronogolf.com/club/meadow-brook-slco",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d121985.94236018437!2d-111.99089643889135!3d40.68201886611056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528ba4af2fe8fb%3A0x8c57e9403f84c5f0!2sMeadow%20Brook%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518902019!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Stonebridge",
+      "holes": "18",
+      "nineHolePrice": "18",
+      "eighteenHolePrice": "36",
+      "cartPrice": "10",
+      "stars": "4.4",
+      "website": "https://www.golfstonebridgeutah.com/",
+      "bookSite": "https://foreupsoftware.com/index.php/booking/22130#/login",
+      "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d121982.3403808894!2d-112.05621293223956!3d40.683986997613694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752f32978473933%3A0x58b76b1b87b811dd!2sStonebridge%20Golf%20Club!5e0!3m2!1sen!2sus!4v1716518914821!5m2!1sen!2sus"
+    },
+    {
+      "name": "The Ridge",
+      "holes": "18",
+      "nineHolePrice": "18",
+      "eighteenHolePrice": "36",
+      "cartPrice": "10",
+      "stars": "4.5",
+      "website": "https://www.golftheridgegc.com/",
+      "bookSite": "https://foreupsoftware.com/index.php/booking/22131#/login",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193703.05295183504!2d-112.1219240194607!3d40.66052214937429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528d9b1295ed09%3A0xf20c267b3d34e8d4!2sThe%20Ridge%20Golf%20Club!5e0!3m2!1sen!2sus!4v1716518924376!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Fore Lakes",
+      "holes": "9",
+      "nineHolePrice": "17",
+      "eighteenHolePrice": "30",
+      "cartPrice": "8",
+      "stars": "4.5",
+      "Extra amenities": "Par 3: $11",
+      "website": "https://www.forelakesgc.com/",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193722.71582279805!2d-112.02991352141372!3d40.65375039262539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528beaa5d67c9d%3A0x5897daa7bf2e3917!2sFore%20Lakes%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518952385!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Mick Riley",
+      "holes": "9",
+      "nineHolePrice": "17",
+      "cartPrice": "10",
+      "stars": "4.4",
+      "Extra amenities": "Par 3: $11",
+      "website": "https://slco.org/parks-recreation/facilities-and-golf/golf/mick-riley-golf-course/",
+      "bookSite": "https://www.chronogolf.com/club/mick-riley-slco",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193722.71582279805!2d-112.02991352141372!3d40.65375039262539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87528a1f1471203f%3A0xeac9c47e912cde85!2sMick%20Riley%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518943563!5m2!1sen!2sus" 
+    },
+    {
+      "name": "Murray Parkway",
+      "holes": "18",
+      "nineHolePrice": "18",
+      "eighteenHolePrice": "36",
+      "cartPrice": "10",
+      "stars": "4.2",
+      "Extra amenities": "9 holes only after 3:30pm ",
+      "website": "https://parkwaygolf.org/",
+      "bookSite": "https://foreupsoftware.com/index.php/booking/6263/244#teetimes",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193727.25330753022!2d-112.06699237883562!3d40.6521875819158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8752897256deaabb%3A0x7bc67e13180d7f73!2sMurray%20Parkway%20Golf%20Course!5e0!3m2!1sen!2sus!4v1716518935562!5m2!1sen!2sus" 
+    }
+  ]
+}
